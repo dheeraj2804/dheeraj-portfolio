@@ -1,4 +1,4 @@
-# Dheeraj Reddy Arjula — Portfolio
+# Dheeraj Reddy Arjula - Portfolio
 
 A responsive engineering portfolio spanning software, AI/ML, and data work.
 
