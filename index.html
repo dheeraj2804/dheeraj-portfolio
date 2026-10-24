@@ -21,7 +21,7 @@
     <nav class="nav shell" aria-label="Primary navigation">
       <a class="wordmark" href="#home" aria-label="Dheeraj, home">Dheeraj<span>.</span></a>
       <div class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="#projects">Work</a></div>
-      <a class="nav-cta" href="#contact"><span class="availability-dot"></span>Available to connect</a>
+      <div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Change color theme" title="Theme: Auto"><span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Auto</span></button><a class="nav-cta" href="#contact"><span class="availability-dot"></span>Connect</a></div>
     </nav>
   </header>
 
@@ -109,7 +109,14 @@
       </div><div class="rail-progress"><span></span></div></div>
     </section>
 
-    <section id="contact" class="contact-section shell"><div class="contact-glow" aria-hidden="true"></div><p class="eyebrow" data-reveal>Have an ambitious problem?</p><h2 data-reveal>Let’s build what’s next.</h2><p data-reveal>I’m open to software engineering, AI/ML, data engineering, analytics, data science, and adjacent roles.</p><div class="contact-actions" data-reveal><a class="contact-primary magnetic" href="mailto:dheerajarjula@gmail.com">Start a conversation <span>↗</span></a><a href="https://www.linkedin.com/in/dheeraj-reddy-arjula/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/dheeraj2804" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
+    <section id="contact" class="contact-section">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="shell contact-heading" data-reveal><p class="eyebrow">Get in touch</p><h2>Let’s work together.</h2><p>Roles, collaborations, and thoughtful technical conversations—I’m always glad to connect.</p></div>
+      <div class="shell contact-layout">
+        <div class="contact-info" data-reveal><h3>Let’s discuss what<br />you’re building.</h3><p>I’m open to software engineering, AI/ML, data engineering, analytics, data science, and related opportunities.</p><div class="contact-list"><div class="contact-item"><span aria-hidden="true">⌖</span><div><small>Location</small><strong>Wichita, Kansas</strong></div></div><a class="contact-item" href="mailto:dheerajarjula@gmail.com"><span aria-hidden="true">✉</span><div><small>Email</small><strong>dheerajarjula@gmail.com</strong></div></a><a class="contact-item" href="tel:+13169934618"><span aria-hidden="true">☎</span><div><small>Phone</small><strong>+1 (316) 993-4618</strong></div></a></div><div class="contact-socials"><a href="https://github.com/dheeraj2804" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/dheeraj-reddy-arjula/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div>
+        <form class="contact-form" id="contact-form" data-reveal><label>Your name<input name="name" type="text" autocomplete="name" placeholder="Jane Recruiter" required /></label><label>Your email<input name="email" type="email" autocomplete="email" placeholder="jane@company.com" required /></label><label class="subject-field">Subject<input name="subject" type="text" placeholder="Opportunity at Company" required /></label><label class="message-field">Message<textarea name="message" rows="5" placeholder="Tell me about the role or project…" required></textarea></label><button class="send-button magnetic" type="submit"><span>Send message</span><b aria-hidden="true">↗</b></button><p class="form-note">Opens your default email app. Your information is not stored.</p></form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer shell"><span>© <b id="year"></b> Dheeraj Reddy Arjula</span><span>Designed with restraint. Engineered with intent.</span><a href="#home">Back to top ↑</a></footer>

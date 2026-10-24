@@ -4,6 +4,29 @@ const lerp = (from, to, amount) => from + (to - from) * amount;
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const themeButton = document.querySelector('.theme-toggle');
+const themeLabel = document.querySelector('.theme-label');
+const themeIcon = document.querySelector('.theme-icon');
+const themeModes = ['auto', 'light', 'dark'];
+const themeIcons = { auto: '◐', light: '☀', dark: '☾' };
+let themeMode = localStorage.getItem('portfolio-theme') || 'auto';
+if (!themeModes.includes(themeMode)) themeMode = 'auto';
+const applyTheme = () => {
+  if (themeMode === 'auto') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.dataset.theme = themeMode;
+  const label = themeMode[0].toUpperCase() + themeMode.slice(1);
+  themeLabel.textContent = label;
+  themeIcon.textContent = themeIcons[themeMode];
+  themeButton.title = `Theme: ${label}`;
+  themeButton.setAttribute('aria-label', `Color theme: ${label}. Activate to change.`);
+};
+applyTheme();
+themeButton.addEventListener('click', () => {
+  themeMode = themeModes[(themeModes.indexOf(themeMode) + 1) % themeModes.length];
+  localStorage.setItem('portfolio-theme', themeMode);
+  applyTheme();
+});
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -118,6 +141,16 @@ document.querySelectorAll('.skill-filter').forEach((button) => {
       card.classList.toggle('filtered-out', !show);
     });
   });
+});
+
+document.getElementById('contact-form')?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const data = new FormData(event.currentTarget);
+  const name = data.get('name');
+  const email = data.get('email');
+  const subject = encodeURIComponent(data.get('subject'));
+  const message = encodeURIComponent(`Hi Dheeraj,\n\n${data.get('message')}\n\nBest,\n${name}\n${email}`);
+  window.location.href = `mailto:dheerajarjula@gmail.com?subject=${subject}&body=${message}`;
 });
 
 const projectRail = document.querySelector('[data-project-rail]');
