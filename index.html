@@ -3,133 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dheeraj Reddy Arjula — full-stack developer portfolio." />
-  <meta name="color-scheme" content="light dark" />
-  <title>Dheeraj Reddy Arjula — Full-Stack Developer</title>
+  <meta name="description" content="Dheeraj Reddy Arjula — software, AI, and data engineer building production systems." />
+  <meta name="theme-color" content="#050505" />
+  <title>Dheeraj Arjula — Software, AI & Data Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <header class="nav-wrap">
-    <nav class="nav" aria-label="Primary navigation">
-      <a class="mark" href="#top" aria-label="Dheeraj, home">Dheeraj<span>.</span></a>
-      <div class="nav-links">
-        <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#contact">Contact</a>
-      </div>
-      <button class="theme-button" aria-label="Change color theme" title="Theme: system">
-        <span aria-hidden="true">◐</span><span class="theme-label">Auto</span>
-      </button>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="wordmark" href="#home" aria-label="Dheeraj, home">Dheeraj<span>.</span></a>
+      <div class="nav-links"><a href="#about">About</a><a href="#experience">Experience</a><a href="#capabilities">Capabilities</a><a href="#projects">Work</a></div>
+      <a class="nav-cta" href="#contact"><span class="availability-dot"></span>Available to connect</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section id="home" class="hero shell hero-solo">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Dheeraj Reddy Arjula · Wichita, KS</p>
-        <h1 class="role-headline">I build real-world systems as a <span class="role-window"><em id="dynamic-role" aria-live="polite">Full-Stack Developer</em></span></h1>
-        <p class="lede"><strong>3+ years building production software</strong> across frontend, backend, cloud, data, and intelligence. I turn complex problems into scalable products, reliable pipelines, machine-learning models, and AI-powered workflows.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#work">Explore my work <span>↘</span></a>
-          <a class="button secondary" href="https://github.com/dheeraj2804" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-sticky shell">
+        <div class="hero-kicker" data-reveal><span>Wichita, Kansas</span><span>Software · AI · Data</span></div>
+        <h1 class="hero-title" aria-label="I engineer ambitious ideas into production systems.">
+          <span class="line" data-line>I engineer ambitious ideas</span>
+          <span class="line" data-line>into <em id="role-text">production systems.</em></span>
+        </h1>
+        <div class="hero-bottom" data-reveal>
+          <p><strong>3+ years</strong> building dependable products across full-stack engineering, cloud platforms, data pipelines, machine learning, and applied AI.</p>
+          <a class="round-link magnetic" href="#projects" aria-label="Explore selected work"><span>Explore<br />my work</span><b>↘</b></a>
         </div>
-        <div class="quick-facts" aria-label="Quick facts">
-          <div><strong>3+ years</strong><span>Building production software</span></div>
-          <div><strong>4 apps</strong><span>Shipped to production</span></div>
-          <div><strong>40K+ records</strong><span>Processed at 98% accuracy</span></div>
-          <div><strong>30% faster</strong><span>Backend throughput</span></div>
-        </div>
-      </div>
-      <div class="hero-code reveal" data-delay="120" aria-hidden="true">
-        <div class="code-top"><span></span><span></span><span></span><small>dheeraj.ts</small></div>
-        <pre><code><b>const</b> engineer = {
-  location: <i>"Wichita, KS"</i>,
-  focus: [<i>"software"</i>, <i>"AI / ML"</i>, <i>"data"</i>],
-  mindset: <i>"own the outcome"</i>
-};
-
-engineer.<strong>build</strong>();</code></pre>
-        <div class="code-status"><span class="status-dot"></span>Ready to ship</div>
+        <div class="hero-orbit" aria-hidden="true"><span class="orbital o1"></span><span class="orbital o2"></span><span class="orbital o3"></span><div class="core"><span>DR</span></div></div>
+        <div class="scroll-cue" aria-hidden="true"><span></span>Scroll to explore</div>
       </div>
     </section>
 
-    <section class="marquee" aria-label="Technology focus"><div class="marquee-track">
-      <span>REACT</span><i>✦</i><span>TYPESCRIPT</span><i>✦</i><span>NODE.JS</span><i>✦</i><span>PYTHON</span><i>✦</i><span>AWS</span><i>✦</i><span>POSTGRESQL</span><i>✦</i><span>AI / LLM</span><i>✦</i><span>REACT</span><i>✦</i><span>TYPESCRIPT</span>
+    <section class="signal-strip" aria-label="Engineering disciplines"><div class="signal-track"><span>FULL-STACK ENGINEERING</span><i>✦</i><span>APPLIED AI</span><i>✦</i><span>DATA SYSTEMS</span><i>✦</i><span>CLOUD DELIVERY</span><i>✦</i><span>MACHINE LEARNING</span><i>✦</i><span>FULL-STACK ENGINEERING</span><i>✦</i><span>APPLIED AI</span><i>✦</i></div></section>
+
+    <section id="about" class="chapter shell">
+      <div class="chapter-index" data-reveal><span>01</span><p>About</p></div>
+      <div class="about-story">
+        <p class="display-copy" data-split>I work where software, intelligence, and data become one useful system.</p>
+        <div class="about-grid">
+          <div class="about-copy" data-reveal><p>I build production applications using React, TypeScript, Node.js, Python, PostgreSQL, and AWS—with ownership from architecture and implementation through deployment, optimization, and support.</p><p>My work spans REST APIs, transactional systems, ELT pipelines, analytics, machine learning, and agentic AI with OpenAI, Claude, MCP, and RAG.</p></div>
+          <div class="system-window tilt-card" data-tilt data-reveal aria-label="Engineering system visualization">
+            <div class="window-top"><span></span><span></span><span></span><small>dheeraj.system</small></div>
+            <div class="system-canvas" aria-hidden="true"><div class="system-node main-node">BUILD</div><div class="system-node n1">WEB</div><div class="system-node n2">AI</div><div class="system-node n3">DATA</div><div class="system-node n4">CLOUD</div><svg viewBox="0 0 500 330" preserveAspectRatio="none"><path d="M250 165L90 70M250 165L410 65M250 165L92 270M250 165L414 270" /></svg></div>
+            <div class="window-status"><span class="availability-dot"></span>Systems online · Ready to build</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics shell" aria-label="Selected impact">
+      <article data-reveal><strong data-count="75000">0</strong><span>daily requests supported</span></article>
+      <article data-reveal><strong data-count="4000000">0</strong><span>records processed daily</span></article>
+      <article data-reveal><strong data-count="98">0</strong><span>percent data accuracy</span></article>
+      <article data-reveal><strong data-count="35">0</strong><span>percent faster releases</span></article>
+    </section>
+
+    <section id="experience" class="chapter experience-chapter"><div class="shell experience-layout">
+      <div class="experience-intro"><div class="chapter-index" data-reveal><span>02</span><p>Experience</p></div><h2 data-reveal>Built in production.<br />Grounded in outcomes.</h2><p data-reveal>A timeline across product engineering, applied research, teaching, data platforms, and cloud delivery.</p></div>
+      <div class="experience-stack">
+        <article class="experience-card" data-reveal><div class="experience-meta"><span>Gades Sales Co., Inc.</span><small>Oct 2025 — May 2026 · Wichita, KS</small></div><h3>Software Engineer Intern</h3><p>Shipped four production full-stack applications using React, Next.js, Node.js, REST APIs, Prisma, PostgreSQL, and ELT pipelines. Built transactional workflows, JWT authentication, RBAC, and optimized SQL that improved backend throughput by 30%.</p><p>Integrated Claude, OpenAI, and MCP into agentic workflows while improving observability—contributing to a 40% increase in user engagement.</p><div class="experience-tags"><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Agentic AI</span></div></article>
+        <article class="experience-card" data-reveal><div class="experience-meta"><span>Wichita State University</span><small>Jan 2025 — May 2026 · Wichita, KS</small></div><h3>Graduate Research / Teaching Assistant</h3><p>Built Python ELT pipelines processing 40,000+ records from 11 sources at 98% data accuracy, with deduplication, anomaly detection, AI-powered normalization, and Power BI reporting.</p><p>Led graduate labs and mentored 80+ students across software engineering, computer vision, CNNs, YOLOv8, NLP, PyTorch, and TensorFlow.</p><div class="experience-tags"><span>Python</span><span>ELT</span><span>Power BI</span><span>ML</span></div></article>
+        <article class="experience-card" data-reveal><div class="experience-meta"><span>Genpact</span><small>Jan 2023 — Jun 2024 · Hyderabad, India</small></div><h3>Software Engineer</h3><p>Engineered Python, Java, FastAPI, Docker, and AWS services supporting 75K+ daily requests. Built cloud data pipelines processing 4M+ records per day with Python, SQL, Spark, and S3.</p><p>Reduced query latency by 23% and release preparation time by 35% through indexing, automated tests, CI/CD, and containerized deployments.</p><div class="experience-tags"><span>Java</span><span>FastAPI</span><span>AWS</span><span>Spark</span></div></article>
+      </div>
     </div></section>
 
-    <section id="about" class="section shell split about-section">
-      <div class="about-aside reveal">
-        <div class="section-label"><span>01</span> About</div>
-        <figure class="about-visual"><img src="assets/about-systems-visual.jpg" alt="Abstract visualization of interconnected software, AI, and data systems" /><figcaption>Systems, data, intelligence.</figcaption></figure>
-      </div>
-      <div class="section-content reveal">
-        <h2>Engineering grounded in curiosity and execution.</h2>
-        <p class="large-copy">I build and deploy production applications using React, TypeScript, Node.js, Python, PostgreSQL, and AWS, with ownership across architecture, implementation, deployment, optimization, and support.</p>
-        <p>My experience includes REST APIs, backend systems, ETL pipelines, analytics, machine learning, and AI/LLM integrations using OpenAI, Anthropic Claude, MCP, and RAG. I’m exploring software engineering, AI/ML engineering, data engineering, analytics, and data-science roles where I can bring this cross-functional perspective to meaningful problems.</p>
-      </div>
-    </section>
-
-    <section id="experience" class="section shell">
-      <div class="work-heading reveal"><div class="section-label"><span>02</span> Experience</div><h2>Production engineering, research, and teaching.</h2></div>
-      <div class="timeline">
-        <article class="experience reveal"><div class="experience-meta"><span>Oct 2025 — May 2026</span><span>Wichita, KS</span></div><div><p class="project-type">Gades Sales Co., Inc.</p><h3>Software Engineer Intern</h3><p>Designed and shipped four production full-stack applications across React, Next.js, Node.js, REST APIs, Prisma, PostgreSQL, and ETL pipelines. Built transactional workflows, JWT authentication, RBAC, and optimized SQL queries that improved backend throughput by 30%.</p><p>Integrated Anthropic Claude, OpenAI, and MCP into production agentic workflows and improved observability, contributing to a 40% increase in user engagement.</p></div></article>
-        <article class="experience reveal"><div class="experience-meta"><span>Jan 2025 — May 2026</span><span>Wichita, KS</span></div><div><p class="project-type">Wichita State University</p><h3>Graduate Research / Teaching Assistant</h3><p>Built Python ELT pipelines processing 40,000+ records from 11 sources with 98% data accuracy, adding deduplication, validation, anomaly detection, OpenAI-powered normalization, and Power BI dashboards.</p><p>Led graduate labs and mentored 80+ students across data structures, software engineering, computer vision, CNNs, YOLOv8, NLP, PyTorch, and TensorFlow.</p></div></article>
-        <article class="experience reveal"><div class="experience-meta"><span>Jan 2023 — Jun 2024</span><span>Hyderabad, India</span></div><div><p class="project-type">Genpact</p><h3>Software Engineer</h3><p>Engineered scalable backend services and REST APIs using Python, Java, FastAPI, Docker, and AWS, supporting 75K+ daily requests. Built cloud-based data pipelines processing 4M+ records daily using Python, SQL, Spark, and AWS S3, while optimizing database queries and indexing to reduce response latency by 23%.</p><p>Improved application reliability and delivery efficiency through automated testing, CI/CD pipelines, and containerized deployments using Jenkins, GitHub Actions, and Docker, reducing release preparation time by 35%.</p></div></article>
+    <section id="capabilities" class="chapter shell capabilities-chapter">
+      <div class="chapter-index" data-reveal><span>03</span><p>Capabilities</p></div>
+      <div class="capabilities-head"><h2 data-reveal>One engineer.<br /><em>Five dimensions.</em></h2><p data-reveal>From polished interfaces to reliable services, intelligent workflows, analytics, and the cloud infrastructure underneath them.</p></div>
+      <div class="capability-stage">
+        <article class="capability-panel aqua" data-reveal><span>01</span><h3>Product engineering</h3><p>React, Next.js, TypeScript, Node.js, Java, Spring Boot, FastAPI, REST, GraphQL, microservices.</p></article>
+        <article class="capability-panel violet" data-reveal><span>02</span><h3>Applied AI</h3><p>OpenAI, Claude, MCP, RAG, embeddings, semantic search, agents, NLP, Keras, TensorFlow.</p></article>
+        <article class="capability-panel amber" data-reveal><span>03</span><h3>Data systems</h3><p>Python, SQL, Spark, ETL / ELT, Power BI, PostgreSQL, MongoDB, DynamoDB, vector databases.</p></article>
+        <article class="capability-panel coral" data-reveal><span>04</span><h3>Cloud delivery</h3><p>AWS, EC2, S3, Lambda, RDS, Docker, Kubernetes, GitHub Actions, Jenkins, monitoring.</p></article>
+        <article class="capability-panel silver" data-reveal><span>05</span><h3>Engineering craft</h3><p>System design, testing, accessibility, performance, observability, CI/CD, secure workflows.</p></article>
       </div>
     </section>
 
-    <section id="skills" class="section shell">
-      <div class="skills-intro reveal"><div class="section-label"><span>03</span> Skills architecture</div><h2>One engineer. Multiple layers of the product.</h2><p>A capability map spanning interfaces, services, AI, data systems, cloud delivery, and cross-platform development.</p></div>
-      <div class="skill-overview reveal">
-        <div><span class="mini-label">Capability overview</span><h3>Full-stack engineering backed by cloud delivery, applied AI, and data systems.</h3><p>I work across the lifecycle—from responsive interfaces and APIs to pipelines, models, deployment, and production support.</p></div>
-        <div class="overview-grid"><div><small>Core strength</small><strong>Full Stack</strong><span>Frontend, backend, APIs</span></div><div><small>AI + Data</small><strong>RAG + LLMs</strong><span>Models, pipelines, agents</span></div><div><small>Platforms</small><strong>Web + Mobile</strong><span>Responsive, cross-platform</span></div><div><small>Workflow</small><strong>Cloud Native</strong><span>CI/CD, containers, AWS</span></div></div>
-      </div>
-      <div class="skill-filters reveal" role="group" aria-label="Filter skills">
-        <button class="skill-filter active" data-filter="all">All skills</button><button class="skill-filter" data-filter="frontend">Frontend</button><button class="skill-filter" data-filter="backend">Backend</button><button class="skill-filter" data-filter="data">Data + AI</button><button class="skill-filter" data-filter="database">Databases</button><button class="skill-filter" data-filter="cloud">Cloud + Tools</button><button class="skill-filter" data-filter="mobile">Mobile</button>
-      </div>
-      <div class="capability-grid">
-        <article class="capability-card cyan reveal" data-category="frontend"><div class="capability-head"><span class="capability-icon">◇</span><div><small>Responsive, component-driven interfaces</small><h3>Frontend Engineering</h3></div></div><p>Polished web experiences with reusable components, thoughtful interaction states, and responsive design.</p><div class="tags"><span>React.js</span><span>Next.js</span><span>Angular</span><span>JavaScript</span><span>TypeScript</span><span>HTML5</span><span>CSS3</span><span>Redux Toolkit</span><span>Tailwind</span><span>Bootstrap</span><span>Electron</span></div></article>
-        <article class="capability-card violet reveal" data-category="backend"><div class="capability-head"><span class="capability-icon">&lt;/&gt;</span><div><small>APIs, services, and application logic</small><h3>Backend Development</h3></div></div><p>Server-side systems, routing, middleware, authentication, and reliable backend flows for real products.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Spring Security</span><span>Hibernate</span><span>JPA</span><span>Node.js</span><span>Express.js</span><span>Flask</span><span>Django</span><span>.NET Core</span><span>REST APIs</span><span>GraphQL</span><span>gRPC</span><span>Microservices</span><span>Apache Kafka</span><span>JWT</span><span>OAuth2</span></div></article>
-        <article class="capability-card green reveal" data-category="data"><div class="capability-head"><span class="capability-icon">✦</span><div><small>Models, pipelines, automation, and analysis</small><h3>Data &amp; AI Workflows</h3></div></div><p>Collecting, cleaning, analyzing, and enriching data for research, analytics, machine learning, and product automation.</p><div class="tags"><span>Python</span><span>SQL</span><span>ETL / ELT</span><span>Power BI</span><span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>OpenAI</span><span>Claude</span><span>MCP</span><span>RAG</span><span>Embeddings</span><span>Semantic Search</span><span>Agentic AI</span><span>YOLOv8</span><span>NLP</span></div></article>
-        <article class="capability-card orange reveal" data-category="database"><div class="capability-head"><span class="capability-icon">▤</span><div><small>Relational and NoSQL data systems</small><h3>Databases</h3></div></div><p>Clean schemas, transactional workflows, efficient queries, indexing, and dependable data handling.</p><div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>SQL Server</span><span>MongoDB</span><span>DynamoDB</span><span>SQLite</span><span>Prisma ORM</span><span>SQLAlchemy</span><span>Vector Databases</span><span>Query Optimization</span></div></article>
-        <article class="capability-card pink reveal" data-category="cloud"><div class="capability-head"><span class="capability-icon">☁</span><div><small>Deployment, observability, and workflow</small><h3>Cloud &amp; Tooling</h3></div></div><p>Collaborative engineering workflows and cloud platforms for shipping, operating, and improving software.</p><div class="tags"><span>AWS</span><span>EC2</span><span>S3</span><span>Lambda</span><span>SQS</span><span>RDS</span><span>CloudWatch</span><span>Microsoft Azure</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Jenkins</span><span>GitLab CI/CD</span><span>OpenShift</span><span>Git</span><span>Linux</span><span>Postman</span></div></article>
-        <article class="capability-card coral reveal" data-category="mobile"><div class="capability-head"><span class="capability-icon">▯</span><div><small>Cross-platform application delivery</small><h3>Mobile Development</h3></div></div><p>Cross-platform application patterns, responsive experiences, accessibility testing, and gesture-driven interaction.</p><div class="tags"><span>React Native</span><span>Ionic Framework</span><span>Cross-Platform Development</span><span>Accessibility Testing</span><span>Gesture Controls</span></div></article>
-      </div>
+    <section id="projects" class="projects-section">
+      <div class="shell projects-heading"><div class="chapter-index" data-reveal><span>04</span><p>Selected work</p></div><h2 data-reveal>Products with a pulse.</h2><p data-reveal>Five projects—each built around a real workflow, a clear user, and measurable utility.</p></div>
+      <div class="project-rail" data-project-rail><div class="project-track">
+        <a class="project-card inventory" href="https://github.com/dheeraj2804/inventory-management-system" target="_blank" rel="noreferrer"><div class="project-copy"><span class="project-no">01 · FEATURED</span><p class="project-type">Full-stack operations platform</p><h3>StockSync</h3><p>A modern inventory workspace unifying products, suppliers, purchasing, sales, stock movements, search, CSV exports, and business analytics.</p><div class="project-tags"><span>Next.js 16</span><span>Express 5</span><span>PostgreSQL</span><span>Prisma</span></div><b>View repository ↗</b></div><div class="product-scene" aria-label="Stylized StockSync dashboard preview"><div class="product-sidebar"><i></i><i></i><i></i><i></i><i></i></div><div class="product-ui"><div class="ui-top"><span>StockSync</span><em>⌘ K</em></div><div class="ui-cards"><i></i><i></i><i></i></div><div class="ui-chart"><svg viewBox="0 0 420 140" preserveAspectRatio="none"><defs><linearGradient id="chart" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#78f4d0" stop-opacity=".8"/><stop offset="1" stop-color="#78f4d0" stop-opacity="0"/></linearGradient></defs><path d="M0 118 C45 112,52 65,102 78 S165 30,215 52 S298 98,340 48 S386 40,420 12 L420 140 L0 140Z" fill="url(#chart)"/><path d="M0 118 C45 112,52 65,102 78 S165 30,215 52 S298 98,340 48 S386 40,420 12" fill="none" stroke="#78f4d0" stroke-width="4"/></svg></div><div class="ui-table"><i></i><i></i><i></i><i></i></div></div></div></a>
+        <a class="project-card meeting" href="https://github.com/dheeraj2804/Business-Meeting-Summary-Generation" target="_blank" rel="noreferrer"><div class="project-copy"><span class="project-no">02</span><p class="project-type">NLP · Summarization</p><h3>Meeting intelligence</h3><p>Transforms long-form business conversations into concise, useful summaries and action-oriented takeaways.</p><div class="project-tags"><span>Machine learning</span><span>NLP</span><span>Summarization</span></div><b>View repository ↗</b></div><div class="abstract-mark"><span>AI</span><i></i><i></i></div></a>
+        <a class="project-card attention" href="https://github.com/dheeraj2804/attention_keras" target="_blank" rel="noreferrer"><div class="project-copy"><span class="project-no">03</span><p class="project-type">Deep learning · NLP</p><h3>Attention, visualized</h3><p>A Keras project exploring sequence modeling and neural attention for natural-language workflows.</p><div class="project-tags"><span>Keras</span><span>TensorFlow</span><span>Attention</span></div><b>View repository ↗</b></div><div class="attention-field" aria-hidden="true"></div></a>
+        <a class="project-card hubspot" href="https://github.com/dheeraj2804/hubspot-quote-templates" target="_blank" rel="noreferrer"><div class="project-copy"><span class="project-no">04</span><p class="project-type">Sales operations · Templates</p><h3>Quotes that think</h3><p>Six production HubSpot quote templates with configurable columns, bundle rollups, pricing alerts, and print-ready layouts.</p><div class="project-tags"><span>HubL</span><span>Jinja2</span><span>HubSpot</span></div><b>View repository ↗</b></div><div class="quote-stack" aria-hidden="true"><i></i><i></i><i></i></div></a>
+        <a class="project-card erp" href="https://github.com/dheeraj2804/wsu_erp_system" target="_blank" rel="noreferrer"><div class="project-copy"><span class="project-no">05</span><p class="project-type">Full-stack ERP · Operations</p><h3>Campus operations, connected</h3><p>An equipment reservation and maintenance portal with roles, approvals, tracking, service tickets, inventory, and analytics.</p><div class="project-tags"><span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>React</span></div><b>View repository ↗</b></div><div class="erp-rings" aria-hidden="true"><i></i><i></i><span>WSU</span></div></a>
+      </div><div class="rail-progress"><span></span></div></div>
     </section>
 
-    <section id="work" class="section shell">
-      <div class="work-heading reveal"><div class="section-label"><span>04</span> Selected projects</div><h2>Systems built around real operational needs.</h2></div>
-      <div class="project-list">
-        <a class="project feature reveal" href="https://github.com/dheeraj2804/Business-Meeting-Summary-Generation" target="_blank" rel="noreferrer">
-          <div class="project-number">01</div><div><p class="project-type">Major project · NLP</p><h3>Business Meeting Summary Generation</h3><p>A meeting summarizer created as a major academic project, focused on turning long-form conversation into concise, useful takeaways.</p><div class="tags"><span>Machine learning</span><span>Summarization</span><span>NLP</span></div></div><span class="project-arrow">↗</span>
-        </a>
-        <a class="project reveal" href="https://github.com/dheeraj2804/attention_keras" target="_blank" rel="noreferrer"><div class="project-number">02</div><div><p class="project-type">Deep learning · NLP</p><h3>Attention Keras Project</h3><p>An attention-focused Keras project exploring sequence modeling and neural attention for natural-language processing workflows.</p><div class="tags"><span>Keras</span><span>TensorFlow</span><span>Attention</span><span>NLP</span></div></div><span class="project-arrow">↗</span></a>
-        <a class="project reveal" href="https://github.com/dheeraj2804/hubspot-quote-templates" target="_blank" rel="noreferrer"><div class="project-number">03</div><div><p class="project-type">Production templates · Sales operations</p><h3>HubSpot Quote Templates</h3><p>A six-template HubSpot quote system covering estimates, general quotes, take-offs, fulfillment, lump-sum pricing, and assemblies—with bundle rollups, configurable columns, pricing alerts, and print-ready PDF layouts.</p><div class="tags"><span>HubL</span><span>Jinja2</span><span>HTML</span><span>CSS</span><span>HubSpot</span></div></div><span class="project-arrow">↗</span></a>
-        <a class="project reveal" href="https://github.com/dheeraj2804/wsu_erp_system" target="_blank" rel="noreferrer"><div class="project-number">04</div><div><p class="project-type">Full-stack ERP · Academic operations</p><h3>WSU ERP System</h3><p>An equipment reservation and maintenance portal with student and staff roles, approval workflows, loan and return tracking, overdue fees, service tickets, inventory management, and analytics dashboards.</p><div class="tags"><span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>React</span><span>Chart.js</span></div></div><span class="project-arrow">↗</span></a>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="shell contact-heading reveal"><p class="eyebrow">Get in touch</p><h2>Let’s work together.</h2><p>Roles, collaborations, thoughtful technical conversations—I’m always glad to connect.</p></div>
-      <div class="shell contact-grid">
-        <div class="contact-info reveal">
-          <h3>Let’s discuss what you’re building.</h3><p>I’m open to software engineering, AI/ML, data engineering, analytics, data science, and related opportunities.</p>
-          <div class="contact-list"><a href="https://maps.google.com/?q=Wichita%2C+KS" target="_blank" rel="noreferrer"><span>⌖</span><div><small>Location</small><strong>Wichita, Kansas</strong></div></a><a href="mailto:dheerajarjula@gmail.com"><span>✉</span><div><small>Email</small><strong>dheerajarjula@gmail.com</strong></div></a><a href="tel:+13169934618"><span>☎</span><div><small>Phone</small><strong>+1 (316) 993-4618</strong></div></a></div>
-        <div class="social-row"><a href="https://github.com/dheeraj2804" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/dheeraj-reddy-arjula/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
-        </div>
-        <form class="contact-form reveal" id="contact-form">
-          <label>Your name<input type="text" name="name" autocomplete="name" placeholder="Jane Recruiter" required /></label>
-          <label>Your email<input type="email" name="email" autocomplete="email" placeholder="jane@company.com" required /></label>
-          <label>Subject<input type="text" name="subject" placeholder="Opportunity at Company" required /></label>
-          <label>Message<textarea name="message" rows="5" placeholder="Tell me about the role or project…" required></textarea></label>
-          <button class="send-button" type="submit">Send message <span>↗</span></button><p class="form-note">Opens your default email app. Your information is not stored.</p>
-        </form>
-      </div>
-    </section>
+    <section id="contact" class="contact-section shell"><div class="contact-glow" aria-hidden="true"></div><p class="eyebrow" data-reveal>Have an ambitious problem?</p><h2 data-reveal>Let’s build what’s next.</h2><p data-reveal>I’m open to software engineering, AI/ML, data engineering, analytics, data science, and adjacent roles.</p><div class="contact-actions" data-reveal><a class="contact-primary magnetic" href="mailto:dheerajarjula@gmail.com">Start a conversation <span>↗</span></a><a href="https://www.linkedin.com/in/dheeraj-reddy-arjula/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/dheeraj2804" target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
   </main>
-  <footer class="footer shell"><p>© <span id="year"></span> Dheeraj Reddy Arjula</p><p>Designed with intention. Built for the web.</p><a href="#top">Back to top ↑</a></footer>
+
+  <footer class="footer shell"><span>© <b id="year"></b> Dheeraj Reddy Arjula</span><span>Designed with restraint. Engineered with intent.</span><a href="#home">Back to top ↑</a></footer>
   <script src="app.js"></script>
 </body>
 </html>
