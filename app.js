@@ -19,7 +19,14 @@ if (splitCopy) {
   splitCopy.innerHTML = splitCopy.textContent.trim().split(/\s+/).map((word) => `<span class="word">${word}</span>`).join(' ');
 }
 
-const roles = ['production systems.', 'AI-powered products.', 'data platforms.', 'reliable experiences.'];
+const roles = [
+  'Full-Stack Engineer.',
+  'Applied AI Engineer.',
+  'Machine Learning Engineer.',
+  'Data Engineer.',
+  'Data Scientist.',
+  'Software Engineer.',
+];
 const roleText = document.getElementById('role-text');
 let roleIndex = 0;
 if (!reduceMotion && roleText) {
@@ -98,6 +105,18 @@ document.querySelectorAll('.magnetic').forEach((item) => {
   });
   item.addEventListener('pointerleave', () => {
     item.style.transform = '';
+  });
+});
+
+document.querySelectorAll('.skill-filter').forEach((button) => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.skill-filter').forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
+    const filter = button.dataset.filter;
+    document.querySelectorAll('.skill-card').forEach((card) => {
+      const show = filter === 'all' || card.dataset.category === filter;
+      card.classList.toggle('filtered-out', !show);
+    });
   });
 });
 
