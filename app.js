@@ -37,6 +37,53 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.14, rootMargin: '0px 0px -5% 0px' });
 document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
 
+document.querySelectorAll('.experience-stack, .skills-grid, .metrics, .contact-layout').forEach((group) => {
+  [...group.children].forEach((item, index) => {
+    if (item.hasAttribute('data-reveal')) item.style.transitionDelay = `${Math.min(index * 90, 270)}ms`;
+  });
+});
+
+const halo = document.querySelector('.cursor-halo');
+const cursorDot = document.querySelector('.cursor-dot');
+if (!reduceMotion && matchMedia('(pointer:fine)').matches && halo && cursorDot) {
+  let pointerX = innerWidth / 2;
+  let pointerY = innerHeight / 2;
+  let haloX = pointerX;
+  let haloY = pointerY;
+  window.addEventListener('pointermove', (event) => {
+    pointerX = event.clientX;
+    pointerY = event.clientY;
+    document.body.classList.add('cursor-active');
+    cursorDot.style.transform = `translate3d(${pointerX}px, ${pointerY}px, 0)`;
+  }, { passive: true });
+  document.documentElement.addEventListener('mouseleave', () => document.body.classList.remove('cursor-active'));
+  const animateCursor = () => {
+    haloX = lerp(haloX, pointerX, 0.1);
+    haloY = lerp(haloY, pointerY, 0.1);
+    halo.style.transform = `translate3d(${haloX}px, ${haloY}px, 0)`;
+    requestAnimationFrame(animateCursor);
+  };
+  animateCursor();
+}
+
+document.querySelectorAll('.skill-card, .experience-card, .contact-form, .system-window').forEach((surface) => {
+  surface.addEventListener('pointermove', (event) => {
+    const rect = surface.getBoundingClientRect();
+    surface.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+    surface.style.setProperty('--my', `${event.clientY - rect.top}px`);
+  });
+});
+
+const navSectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+      link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+    });
+  });
+}, { rootMargin: '-35% 0px -55%', threshold: 0 });
+document.querySelectorAll('#about, #experience, #capabilities, #projects').forEach((section) => navSectionObserver.observe(section));
+
 const splitCopy = document.querySelector('[data-split]');
 if (splitCopy) {
   splitCopy.innerHTML = splitCopy.textContent.trim().split(/\s+/).map((word) => `<span class="word">${word}</span>`).join(' ');
