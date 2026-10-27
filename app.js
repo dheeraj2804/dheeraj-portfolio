@@ -90,11 +90,11 @@ if (splitCopy) {
 }
 
 const roles = [
+  'Java & Spring Boot Developer.',
   'Full-Stack Engineer.',
   'Applied AI Engineer.',
   'Machine Learning Engineer.',
-  'Data Engineer.',
-  'Data Scientist.',
+  'Data Engineer & Data Scientist.',
   'Software Engineer.',
 ];
 const roleText = document.getElementById('role-text');
