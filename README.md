@@ -15,3 +15,11 @@ portfolio site: https://dheeraj-arjula-portfolio.vercel.app
 ## Local preview
 
 Open `index.html` directly, or serve the directory with any static web server.
+
+## Selected projects
+
+The projects section includes six repositories, led by [Workflow Lab](https://github.com/dheeraj2804/mcp-seq2seq-workflows), a Python document research assistant with MCP tools, hybrid retrieval, PyTorch query normalization, streamed answers, PDF citations, and OCR. Its portfolio card links to the source repository; the research application runs locally rather than at a hosted demo URL.
+
+Portfolio source: https://github.com/dheeraj2804/dheeraj-portfolio
+
+Production site: https://dheeraj-arjula-portfolio.vercel.app
